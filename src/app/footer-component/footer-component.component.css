@@ -1,0 +1,9 @@
+p{
+    height: 50px;
+    width: 100%;
+    background-color: rgb(30, 37, 37);
+    align-self: center;
+    text-align: center;
+    justify-content: center;
+    padding: 10px;
+}
