@@ -10,3 +10,6 @@
 <span>{{twoWayBindValue}}</span>
 <br/>
 <button type="submit" [disabled]="shouldEnable" (click)="handleClick()"> Submit </button>
+
+<p *ngIf="twoWayBindValue==='submitted'"> You have finally writted Submit!, click the button now</p>
+<p *ngIf="twoWayBindValue!=='submitted'"> Please try another text</p>
