@@ -10,6 +10,8 @@ import { DataBindingComponent } from './data-binding/data-binding.component';
 import { FormsModule } from '@angular/forms';
 import { ParentComponentComponent } from './parent-component/parent-component.component';
 import { ChildComponentComponent } from './child-component/child-component.component';
+import { FirstCalComponent } from './first-cal/first-cal.component';
+import { SecondCalComponent } from './second-cal/second-cal.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { ChildComponentComponent } from './child-component/child-component.compo
     FooterComponentComponent,
     DataBindingComponent,
     ParentComponentComponent,
-    ChildComponentComponent
+    ChildComponentComponent,
+    FirstCalComponent,
+    SecondCalComponent
   ],
   imports: [
     BrowserModule,
