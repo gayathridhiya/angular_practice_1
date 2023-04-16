@@ -6,6 +6,8 @@ import { HeaderComponentComponent } from './header-component/header-component.co
 import { SideNavigationComponentComponent } from './side-navigation-component/side-navigation-component.component';
 import { MainBodyComponentComponent } from './main-body-component/main-body-component.component';
 import { FooterComponentComponent } from './footer-component/footer-component.component';
+import { DataBindingComponent } from './data-binding/data-binding.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -13,10 +15,12 @@ import { FooterComponentComponent } from './footer-component/footer-component.co
     HeaderComponentComponent,
     SideNavigationComponentComponent,
     MainBodyComponentComponent,
-    FooterComponentComponent
+    FooterComponentComponent,
+    DataBindingComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

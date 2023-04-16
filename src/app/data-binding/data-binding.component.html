@@ -1,0 +1,12 @@
+<p>data-binding works!</p>
+<h1>The name from TS file is {{name}} - String interpolation</h1>
+<h1 [style]="style" >New Styles - changing property of h1 uisng property binding</h1>
+
+<h1>Event Binding</h1>
+<input type="text" (input)="handleInputChange($event)"/>
+<hr/>
+<!-- <input type="text" value="defaultValue" (input)="handleChange($event)"/> -->
+<input type="text" [(ngModel)] = "twoWayBindValue"/>
+<span>{{twoWayBindValue}}</span>
+<br/>
+<button type="submit" [disabled]="shouldEnable" (click)="handleClick()"> Submit </button>
