@@ -10,6 +10,7 @@ export class DataBindingComponent {
   style = "color:yellow";
   twoWayBindValue = "defaultValue";
   shouldEnable = false;
+  numbers = [...Array(11).keys()].slice(1) //(10) [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
   handleInputChange(event : any){
     console.log(event.target.value)
