@@ -8,6 +8,8 @@ import { MainBodyComponentComponent } from './main-body-component/main-body-comp
 import { FooterComponentComponent } from './footer-component/footer-component.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
 import { FormsModule } from '@angular/forms';
+import { ParentComponentComponent } from './parent-component/parent-component.component';
+import { ChildComponentComponent } from './child-component/child-component.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { FormsModule } from '@angular/forms';
     SideNavigationComponentComponent,
     MainBodyComponentComponent,
     FooterComponentComponent,
-    DataBindingComponent
+    DataBindingComponent,
+    ParentComponentComponent,
+    ChildComponentComponent
   ],
   imports: [
     BrowserModule,
