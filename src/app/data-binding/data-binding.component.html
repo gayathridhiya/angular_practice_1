@@ -11,7 +11,16 @@
     styleRed : twoWayBindValue!=='submitted',
     styleGreen: twoWayBindValue==='submitted',
     }">
+
 {{twoWayBindValue}}</span>
+<br/>
+<span [ngStyle]="{
+    color : twoWayBindValue!=='submitted' ? 'violet' : 'green',
+    }">
+
+{{twoWayBindValue}}</span>
+
+
 <br />
 <button type="submit" [disabled]="shouldEnable" (click)="handleClick()"> Submit </button>
 
