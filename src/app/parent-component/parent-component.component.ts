@@ -8,4 +8,10 @@ import { Component } from '@angular/core';
 export class ParentComponentComponent {
   valueFromParent = "hi  from parent";
 
+  emittedEventValueFromChild = '';
+
+  receiveInParent(e:any){
+    this.emittedEventValueFromChild = e;
+  }
+
 }

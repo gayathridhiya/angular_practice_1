@@ -1,5 +1,6 @@
 <div class="parent">
     <h1>App => Parent => Child</h1>
 <p>parent-component works!</p>
-<app-child-component [valueFromParent]="valueFromParent"></app-child-component>
+<p *ngIf="emittedEventValueFromChild">Value from child {{emittedEventValueFromChild}}</p>
+<app-child-component [valueFromParent]="valueFromParent" (evtEmitter)="receiveInParent($event)"></app-child-component>
 </div>
